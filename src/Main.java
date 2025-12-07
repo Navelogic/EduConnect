@@ -1,3 +1,4 @@
+import model.Avaliacao;
 import model.Curso;
 import model.Turma;
 import model.Usuario.Aluno;
@@ -16,7 +17,26 @@ public class Main {
 
         System.out.println(turma.exibirResumo());
 
+        System.out.println("\n--- Iniciando Ciclo de Avaliações ---");
 
-        turma.removerAluno(aluno);
+        try {
+            var prova1 = new Avaliacao("Prova 1", 8.5);
+            var trabalho = new Avaliacao("Trabalho Final", 9.0);
+
+            aluno.adicionarAvaliacao(prova1);
+            aluno.adicionarAvaliacao(trabalho);
+
+            System.out.println("Notas do aluno " + aluno.getNome() + ":");
+            aluno.getAvaliacoes().forEach(System.out::println);
+
+            System.out.printf("Média atual: %.2f%n", aluno.calcularMedia());
+
+            System.out.println("\nTentando atribuir nota inválida...");
+            var provaInvalida = new Avaliacao("Prova Hacker", 15.0); // Erro aqui
+
+        } catch (IllegalArgumentException e) {
+            // Captura o erro tratado na classe Avaliacao
+            System.err.println("ERRO DE VALIDAÇÃO: " + e.getMessage());
+        }
     }
 }
