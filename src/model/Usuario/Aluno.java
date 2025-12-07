@@ -12,10 +12,8 @@ public class Aluno extends Usuario{
 
     private final List<Avaliacao> avaliacoes = new ArrayList<>();
 
-    public Aluno(){}
-
-    public Aluno (String nome, String registro){
-        super(nome, registro);
+    public Aluno(String nome, String registro, String login, String senha) {
+        super(nome, registro, login, senha);
     }
 
     public void adicionarAvaliacao(Avaliacao avaliacao) {
