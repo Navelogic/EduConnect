@@ -6,7 +6,7 @@ public class MainF3 {
         CursoF3 cursoJava = new CursoF3("Java Spring Boot", "JAVA-SP", 120);
         ProfessorF3 profCarlos = new ProfessorF3("Carlos Sênior", "Arquitetura de Software", "REG-999");
 
-        AlunoF3 a1 = new AlunoF3("Arian Weslley", "2024001", cursoJava);
+        AlunoF3 a1 = new AlunoF3("Navelogic", "2024001", cursoJava);
 
         TurmaF3 turmaNoite = new TurmaF3("TURMA-01-NOITE", profCarlos, cursoJava);
 

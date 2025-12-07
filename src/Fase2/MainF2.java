@@ -6,9 +6,9 @@ public class MainF2 {
         CursoF2 cursoJava = new CursoF2("Java Spring Boot", "JAVA-SP", 120);
         ProfessorF2 profCarlos = new ProfessorF2("Carlos Sênior", "Arquitetura de Software", "REG-999");
 
-        AlunoF2 a1 = new AlunoF2("Arian Weslley", "2024001", cursoJava);
-        AlunoF2 a2 = new AlunoF2("Weslley Arian", "2024002", cursoJava);
-        AlunoF2 a3 = new AlunoF2("ARWESLEYRANDIOAN", "2024003", cursoJava);
+        AlunoF2 a1 = new AlunoF2("Navelogic", "2024001", cursoJava);
+        AlunoF2 a2 = new AlunoF2("LogicNave", "2024002", cursoJava);
+        AlunoF2 a3 = new AlunoF2("fagdsgdfsghdfhgfjghjdfgdfghfhgfhgfhgfh", "2024003", cursoJava);
 
         TurmaF2 turmaNoite = new TurmaF2("TURMA-01-NOITE", profCarlos, cursoJava);
 
