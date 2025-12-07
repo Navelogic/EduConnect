@@ -1,5 +1,6 @@
 package model;
 
+import model.Curso.Curso;
 import model.Usuario.Aluno;
 import model.Usuario.Professor;
 

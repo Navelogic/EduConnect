@@ -1,7 +1,7 @@
 package model.Usuario;
 
 import model.Avaliacao;
-import model.Curso;
+import model.Curso.Curso;
 
 import java.util.ArrayList;
 import java.util.Collections;
